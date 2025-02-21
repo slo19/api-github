@@ -36,7 +36,7 @@ export const Input = styled.input`
   font-size: 24px;
   margin-right: 24px;
   padding: 0 24px;
-
+  color: ${props => props.theme.colors.text};
   &::placeholder {
     color: ${props => props.theme.colors.metalDark};
   }
