@@ -6,7 +6,7 @@ import githubLogo from "../../assets/images/github-logo.svg";
 import {theme} from "../../styles/Theme";
 
 export default function Main () {
-  const [login, setLogin] = useState();
+  const [login, setLogin] = useState('');
   return (
     <Container>
       <Logo
@@ -18,7 +18,7 @@ export default function Main () {
       </Title>
       <Form>
         <Input placeholder="Usuario" value={login} onChange={(event) => setLogin(event.target.value)}/>
-        <Button><MdSearch size={42} color={theme.colors.text}/></Button>
+        <Button to={`/${login}/repositories`}><MdSearch size={42} color={theme.colors.text}/></Button>
       </Form>
 
     </Container>
