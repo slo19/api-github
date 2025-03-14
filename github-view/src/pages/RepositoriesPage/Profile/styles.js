@@ -43,18 +43,17 @@ export const Name = styled.h2`
 `;
 
 export const Inner = styled.div`
-  padding: 1rem;
-
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     display: none;
   }
+  padding: 1rem 0;
 `;
 
 export const Data = styled.p`
   display: flex;
   align-items: center;
   line-height: 1.5;
-
+  text-decoration: none;
   svg {
     margin-right: 10px;
   }
